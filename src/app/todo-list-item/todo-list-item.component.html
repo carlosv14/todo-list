@@ -1,0 +1,15 @@
+<div *ngIf="toDoItem" class="card">
+    <div class="card-body">
+      <h2 class="card-title">
+        {{ toDoItem.description }}
+      </h2>
+      <div class="card-text">
+         <div class="col-sm-6">
+           <div class="form-group">
+             Description:
+             <input type="text" class="form-control" [(ngModel)]="toDoItem.description">
+           </div>
+         </div>
+      </div>
+    </div>
+  </div>
